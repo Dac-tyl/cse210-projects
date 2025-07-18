@@ -58,3 +58,4 @@ class Program
         };
     }
 }
+//I added multiple scriptures that the program can choose from to help you learn
