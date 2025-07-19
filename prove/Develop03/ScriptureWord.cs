@@ -1,26 +1,36 @@
 public class ScriptureWord
 {
-    public string Text { get; private set; }
-    public bool IsHidden { get; private set; }
+    private string _text;
+    private bool _isHidden;
 
     public ScriptureWord(string text)
     {
-        Text = text;
-        IsHidden = false;
+        _text = text;
+        _isHidden = false;
     }
 
     public void Hide()
     {
-        IsHidden = true;
+        _isHidden = true;
     }
 
     public string Display()
     {
-        return IsHidden ? new string('_', Text.Length) : Text;
+        return _isHidden ? new string('_', _text.Length) : _text;
     }
 
     public bool IsVisible()
     {
-        return !IsHidden;
+        return !_isHidden;
+    }
+
+    public string GetText()
+    {
+        return _text;
+    }
+
+    public bool GetIsHidden()
+    {
+        return _isHidden;
     }
 }

@@ -28,7 +28,9 @@ class Program
     static void ClearConsole()
     {
         for (int i = 0; i < 40; i++)
+        {
             Console.WriteLine();
+        }
     }
 
     static List<Scripture> LoadScriptures()
@@ -58,4 +60,5 @@ class Program
         };
     }
 }
+
 //I added multiple scriptures that the program can choose from to help you learn
