@@ -4,6 +4,8 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello FinalProject World!");
+        PetManager petManager = new PetManager();
+        PetUI ui = new PetUI(petManager);
+        ui.Run();
     }
 }
